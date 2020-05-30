@@ -91,11 +91,6 @@ You can easily customize the following options for the library
     - ```PasscodeViewController.config.PasscodeNotMatchMessage =  "Confirm PIN doesn't match"```
 
 
-## Social Media 🔥
-If you like this library, please tell others about it 💕 💕
-
-[[![Share on Twitter](https://github.com/mkrupal09/PinLView/raw/master/twitter_icon.png)](https://github.com/mkrupal09/PinLView/blob/master/twitter_icon.png)] [[![Share on Facebook](https://github.com/mkrupal09/PinLView/raw/master/facebook_icon.png)](https://github.com/mkrupal09/PinLView/blob/master/facebook_icon.png)]
-
 # License
 
 ```
