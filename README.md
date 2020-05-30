@@ -26,6 +26,7 @@ Copy ``` Passcode ``` directory to your project
 Wherever you want to open Passcode Screen. Just copy past below code to your ViewController. 
 
 ### 1. Show Passcode Screen over rootviewcontroller :
+```swift
     if let vc = PasscodeViewController.instance(with: .VERIFY) {
         vc.show { (passcode, newPasscode, mode) in
             print(passcode, newPasscode, mode)
@@ -38,8 +39,9 @@ Wherever you want to open Passcode Screen. Just copy past below code to your Vie
             }
         }
     }    
-
+```
 ### 2. Show Passcode Screen over current viewController :
+```swift
     if let vc = PasscodeViewController.instance(with: .VERIFY) {
         vc.show(in: self) { (passcode, newPasscode, mode) in
             print(passcode, newPasscode, mode)
@@ -52,29 +54,31 @@ Wherever you want to open Passcode Screen. Just copy past below code to your Vie
             }
         }
     }    
-
+```
 ### 3. Start Animating Dots :
-    vc.startProgressing()
+```swift 
+vc.startProgressing()
+```
 
 ### 4. Stop Animating Dots :
-    vc.stopProgress()
-
+```swift
+vc.stopProgress()
+```
 ## Theming
 
 In PasscodeConfig class you can modify following options for changing the theme colors and icons
-
-        var logoImg: UIImage?
-        var backspaceImg: UIImage? = UIImage(named: "btn_backspace")
-        var touchIdImg: UIImage? = UIImage(named: "btn_biometric")
-        var faceIdImg: UIImage? = UIImage(named: "btn_faceid")
-        
-        var backgroundColor: UIColor = .darkGray
-        var msgColor: UIColor = .white
-        var keyTintColor: UIColor = .white
-        var keyHighlitedTintColor: UIColor = .lightGray
-        var keyHighlitedBackgroundColor: UIColor = UIColor.white.withAlphaComponent(0.2)
-        var digitColor: UIColor = .white
-    
+```swift
+var logoImg: UIImage?
+var backspaceImg: UIImage? = UIImage(named: "btn_backspace")
+var touchIdImg: UIImage? = UIImage(named: "btn_biometric")
+var faceIdImg: UIImage? = UIImage(named: "btn_faceid")
+var backgroundColor: UIColor = .darkGray
+var msgColor: UIColor = .white
+var keyTintColor: UIColor = .white
+var keyHighlitedTintColor: UIColor = .lightGray
+var keyHighlitedBackgroundColor: UIColor = UIColor.white.withAlphaComponent(0.2)
+var digitColor: UIColor = .white
+```    
 
 ## Customization
 
@@ -89,7 +93,6 @@ You can easily customize the following options for the library
     - ```PasscodeViewController.config.EnterNewPasscodeMessage =  "Please enter a new PIN"```
     - ```PasscodeViewController.config.ReEnterPasscodeMessage =  "Confirm your PIN"```
     - ```PasscodeViewController.config.PasscodeNotMatchMessage =  "Confirm PIN doesn't match"```
-
 
 # License
 
@@ -107,5 +110,4 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
 ```
