@@ -19,7 +19,7 @@ Library has main 3 features  as follow:
 
 A simple manual installation with drag and drop directory option will enabled your app with Passcode Lock.
 
-Copy ``` Passcode ``` directory to your project
+Copy ``` PasscodeVC ``` directory to your project
 
 ## Usage
 
